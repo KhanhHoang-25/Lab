@@ -7,11 +7,10 @@ nav {
   width: 100vw;
   height: 30px;
   background-color: rgb(162, 130, 81);
-  margin-bottom: 40px;
 }
 
 .ulnav {
-  width: 30%;
+  width: 50%;
   display: flex;
   list-style: none;
   height: 100%;
@@ -20,7 +19,7 @@ nav {
 
 li {
   height: 100%;
-  width: 80px;
+  width: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -39,10 +38,11 @@ li:hover {
 #container {
   display: flex;
   justify-content: space-around;
-  align-content: space-between;
+  align-content: space-around;
   flex-wrap: wrap;
   width: 100vw;
   margin-bottom: 30px;
+  padding-top: 40px;
 }
 
 .card {
@@ -92,4 +92,66 @@ button a:hover {
   justify-content: center;
   align-items: center;
   color: aliceblue;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 200ms;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: auto;
+  padding: 5px;
+  background: #fff;
+  border-radius: 10px;
+  width: 30%;
+  height: 400px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  transition: all 5s ease-in-out;
+  background-color: #333;
+}
+.popup img {
+  width: 100%;
+  border-radius: 0;
+}
+.popup h2 {
+  margin-top: 0;
+  color: #fff8f8;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+}
+.popup .close:hover {
+  color: #06d85f;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+  color: #fff8f8;
+  font-family: Tahoma, Arial, sans-serif;
+  margin-bottom: 20px;
 }
