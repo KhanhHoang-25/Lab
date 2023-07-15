@@ -8,7 +8,7 @@ const themes = {
     backgroundColorAll: "darkgrey",
   },
   light: {
-    backgroundColor: "grey",
+    backgroundColor: " rgba(204, 205, 206, 0.868)",
     color: "black",
     backgroundColorAll: "white",
   },

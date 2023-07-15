@@ -11,7 +11,7 @@ nav {
 }
 
 .ulnav {
-  width: 30%;
+  width: 50%;
   display: flex;
   list-style: none;
   height: 100%;
@@ -20,7 +20,7 @@ nav {
 
 li {
   height: 100%;
-  width: 80px;
+  width: 10%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -52,7 +52,6 @@ li:hover {
   height: fit-content;
   margin-bottom: 30px;
   background-color: rgba(217, 220, 223, 0.6);
-  background-color: rgba(150, 153, 156, 0.868);
 }
 
 img {

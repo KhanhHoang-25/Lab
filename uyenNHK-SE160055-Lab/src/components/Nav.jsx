@@ -32,7 +32,7 @@ export default function Navigation() {
               Contact
             </a>
           </li>
-          <li>
+          <li style={{ width: "20%" }}>
             <a href="#" onClick={toggle} style={{ color: theme.color }}>
               Switch {dark ? "light" : "dark"} mode
             </a>
