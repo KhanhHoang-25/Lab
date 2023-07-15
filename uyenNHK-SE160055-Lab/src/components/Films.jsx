@@ -1,9 +1,11 @@
 import * as React from "react";
 import { listOfFilms } from "../shared/ListOfFilms";
+import { ThemeContext } from "./ThemeContext";
 
 function Films() {
+  const { theme } = React.useContext(ThemeContext);
   return (
-    <div id="container">
+    <div id="container" style={{ backgroundColor: theme.backgroundColorHTML }}>
       {listOfFilms.map((film, index) => (
         <div className="card" key={index}>
           <img src={film.img} alt="Films Image" />

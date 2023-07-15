@@ -5,12 +5,12 @@ const themes = {
   dark: {
     backgroundColor: "black",
     color: "white",
-    backgroundColorAll: "darkgrey",
+    backgroundColorHTML: "rgba(52, 54, 56, 0.063)",
   },
   light: {
     backgroundColor: " rgba(204, 205, 206, 0.868)",
     color: "black",
-    backgroundColorAll: "white",
+    backgroundColorHTML: "rgb(255, 255, 255)",
   },
 };
 const initialState = {

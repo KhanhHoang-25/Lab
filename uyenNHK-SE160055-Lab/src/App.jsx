@@ -2,16 +2,14 @@ import "./App.css";
 import Films from "./components/Films";
 import Footer from "./components/Footer";
 import Navigation from "./components/Nav";
-import { useContext } from "react";
-import { ThemeContext } from "./components/ThemeContext";
 
 function App() {
   return (
-    <>
+    <div>
       <Navigation />
       <Films />
       <Footer />
-    </>
+    </div>
   );
 }
 
