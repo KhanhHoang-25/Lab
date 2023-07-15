@@ -10,6 +10,7 @@ export default function Navigation() {
       >
         <ul className="ulnav">
           <li>
+<<<<<<< Updated upstream
             <a href="/" style={{ color: theme.color }}>
               Home
             </a>
@@ -42,6 +43,18 @@ export default function Navigation() {
             <a href="#" onClick={toggle} style={{ color: theme.color }}>
               Switch {dark ? "light" : "dark"} mode
             </a>
+=======
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/news">News</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+>>>>>>> Stashed changes
           </li>
         </ul>
       </nav>
